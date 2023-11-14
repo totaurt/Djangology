@@ -1,0 +1,130 @@
+/* body {
+    overflow: hidden;
+} */
+
+.page-header {
+    background-image: url('https://as1.ftcdn.net/v2/jpg/02/78/52/36/1000_F_278523648_h2z0oyB2xqxQmd3GiwByuXMYjpRzcLU9.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Color del texto sobre la imagen */
+    text-align: center;
+    padding: 1%; /* Ajusta según sea necesario */
+    /* margin-top: -2px; */
+    margin: 0 auto;
+}
+
+/* Estilos para el contenedor principal */
+.page-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #F58857;
+}
+
+.container-change-lieu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2%;
+}
+
+h1 a {
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Lobster', sans-serif;
+
+}
+
+h2 a {
+    color: #F5586A;
+    font-family: 'Lobster', sans-serif;
+}
+
+.characters-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.character-card {
+    max-height: 10%;
+    max-width: 25%;
+    width: calc(33.33% - 40px); /* Ajuste del ancho de las tarjetas con márgenes */
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #F2D7D5;
+}
+
+.character-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.character-photo img {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.character-details {
+    margin-top: 15px;
+}
+
+.characteristic {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.character-text {
+    margin-top: 15px;
+    color: #555;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .character-card {
+        width: 80%; /* Ajuste del ancho para pantallas más pequeñas */
+    }
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.actions-table {
+    width: 40%;
+    height: 50%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #F2D7D5; /* Nuevo color de fondo */
+}
+
+.actions-table th, .actions-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.actions-table th {
+    background-color: #F5586A; /* Nuevo color de fondo para el encabezado */
+    color: #fff; /* Cambié el color del texto para que sea legible sobre el fondo oscuro */
+}
+
+.actions-table tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+form {
+    /* padding-top: 20px; */
+    margin: 0 auto;
+}

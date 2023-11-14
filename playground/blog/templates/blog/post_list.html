@@ -1,0 +1,40 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <h1 class="page-title">Characters</h1>
+    <div class="characters-container">
+        {% for character in characters %}
+            <div class="character-card">
+                <h2 class="character-title">
+                    <a href="{% url 'character_detail' id_character=character.id_character %}">{{ character.id_character }}</a>
+                </h2>
+                <figure class="character-photo">
+                    <img src="{{ character.photo }}" alt="{{ character.id_character }}">
+                </figure>
+                <div class="character-details">
+                    <p class="characteristic">Race: {{ character.race }}</p>
+                    <p class="characteristic">Etat: {{ character.etat }}</p>
+                    <p class="characteristic">Lieu: {{ character.lieu }}</p>
+                </div>
+                <p class="character-text">{{ character.text|linebreaksbr }}</p>
+            </div>
+        {% endfor %}
+    </div>
+
+    <h1 class="page-title">Equipements</h1>
+    <div class="characters-container">
+        {% for equipement in equipements %}
+            <div class="character-card">
+                <h2 class="character-title">
+                    <a>{{ equipement.id_equip }}</a>
+                </h2>
+                <figure class="character-photo">
+                    <img src="{{ equipement.photo }}" alt="{{ equipement.id_equip }}">
+                </figure>
+                <div class="character-details">
+                    <p class="characteristic">Disponibilite: {{ equipement.disponibilite }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
